@@ -1,0 +1,382 @@
+{
+  "nodes": [
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s1",
+      "contributor": null,
+      "identity": "collected:ovsienko-tabachnikov-first-dual-somos-integrality:2:s1",
+      "kind": "paper",
+      "label": "Theorem",
+      "lean_source": {
+        "revision": "256870690452e5629b1260ae620f2d647417e857",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/256870690452e5629b1260ae620f2d647417e857/D5/S1/Recurrence/Invariants/SomosFirstDualIntegrality.lean"
+      },
+      "lineage": "collected:ovsienko-tabachnikov-first-dual-somos-integrality:s1",
+      "macros": {
+        "\\QQ": "\\mathbb Q",
+        "\\RR": "\\mathbb R",
+        "\\ZZ": "\\mathbb Z",
+        "\\eps": "\\varepsilon"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "ovsienko-tabachnikov-first-dual-somos-integrality",
+      "scope": "in_scope",
+      "statement": "The recurrence~\\eqref{eq:rec} has a unique orbit in $D(\\QQ)$ and a unique\norbit in $D(\\RR)$; the latter is its coefficientwise image. For every\nchoice of the parameters above, all $a_n$ are positive integers and\neach four consecutive $a_n$ are pairwise coprime. For each fixed $c$,\n\\begin{equation}\n \\bigl(b_n\\in\\ZZ\\text{ for every }n\\ge0\\bigr)\n \\quad\\Longleftrightarrow\\quad\n (q-2)u=(2p-2)v.\n\\end{equation}",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Ovsienko–Tabachnikov's dual Somos integrality conjectures: a two-weight extension of Hone's divisibility proof",
+      "toolchain": null,
+      "version": 2,
+      "work": "ovsienko-tabachnikov-first-dual-somos-integrality"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s2",
+      "contributor": null,
+      "identity": "collected:ovsienko-tabachnikov-first-dual-somos-integrality:2:s2",
+      "kind": "paper",
+      "label": "Lemma",
+      "lean_source": {
+        "revision": "256870690452e5629b1260ae620f2d647417e857",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/256870690452e5629b1260ae620f2d647417e857/D5/S1/Recurrence/Invariants/SomosFirstDualIntegrality.lean"
+      },
+      "lineage": "collected:ovsienko-tabachnikov-first-dual-somos-integrality:s2",
+      "macros": {
+        "\\QQ": "\\mathbb Q",
+        "\\RR": "\\mathbb R",
+        "\\ZZ": "\\mathbb Z",
+        "\\eps": "\\varepsilon"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "ovsienko-tabachnikov-first-dual-somos-integrality",
+      "scope": "in_scope",
+      "statement": "Let $A,B,C,D,E,F,G,H\\in R$ satisfy\n\\begin{align*}\n EA&=U(BD)^p+VC^q,& FB&=U(CE)^p+VD^q,\\\\\n GC&=U(DF)^p+VE^q,& HD&=U(EG)^p+VF^q.\n\\end{align*}\nSuppose the real part $e$ of $E$ is nonzero and coprime to the real\nparts of $B,C,D$. Then\n\\begin{equation}\n E\\mid U(FH)^p+VG^q\\quad\\Longleftrightarrow\\quad e\\mid\\kappa.\n\\end{equation}\nDivisibility on the left is in $R$ and on the right in $\\ZZ$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Ovsienko–Tabachnikov's dual Somos integrality conjectures: a two-weight extension of Hone's divisibility proof",
+      "toolchain": null,
+      "version": 2,
+      "work": "ovsienko-tabachnikov-first-dual-somos-integrality"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s3",
+      "contributor": null,
+      "identity": "collected:ovsienko-tabachnikov-first-dual-somos-integrality:2:s3",
+      "kind": "paper",
+      "label": "Lemma",
+      "lean_source": {
+        "revision": "256870690452e5629b1260ae620f2d647417e857",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/256870690452e5629b1260ae620f2d647417e857/D5/S1/Recurrence/Invariants/SomosFirstDualIntegrality.lean"
+      },
+      "lineage": "collected:ovsienko-tabachnikov-first-dual-somos-integrality:s3",
+      "macros": {
+        "\\QQ": "\\mathbb Q",
+        "\\RR": "\\mathbb R",
+        "\\ZZ": "\\mathbb Z",
+        "\\eps": "\\varepsilon"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "ovsienko-tabachnikov-first-dual-somos-integrality",
+      "scope": "in_scope",
+      "statement": "The rational real-part recurrence\n\\begin{equation}\n a_{n+4}a_n=(a_{n+1}a_{n+3})^p+a_{n+2}^q,\\qquad\n a_0=a_1=a_2=a_3=1\n\\end{equation}\nis everywhere positive and satisfies $a_{n+1}>a_n$ for $n\\ge3$.\nWhenever a prefix is integral, each four consecutive terms in that\nprefix are pairwise coprime.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Ovsienko–Tabachnikov's dual Somos integrality conjectures: a two-weight extension of Hone's divisibility proof",
+      "toolchain": null,
+      "version": 2,
+      "work": "ovsienko-tabachnikov-first-dual-somos-integrality"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s4",
+      "contributor": null,
+      "identity": "collected:ovsienko-tabachnikov-first-dual-somos-integrality:2:s4",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "256870690452e5629b1260ae620f2d647417e857",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/256870690452e5629b1260ae620f2d647417e857/D5/S1/Recurrence/Invariants/SomosFirstDualIntegrality.lean"
+      },
+      "lineage": "collected:ovsienko-tabachnikov-first-dual-somos-integrality:s4",
+      "macros": {
+        "\\QQ": "\\mathbb Q",
+        "\\RR": "\\mathbb R",
+        "\\ZZ": "\\mathbb Z",
+        "\\eps": "\\varepsilon"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "ovsienko-tabachnikov-first-dual-somos-integrality",
+      "scope": "in_scope",
+      "statement": "Suppose $\\kappa\\ne0$, and let\n\\[\n m=\\min\\{n\\ge4:a_n\\nmid\\kappa\\}.\n\\]\nThe first noninteger shadow is $b_{m+4}$. Its denominator in lowest\nterms is\n\\[\n \\frac{a_m}{\\gcd(a_m,\\kappa)}.\n\\]\nBoth the index and the denominator are independent of $c$. In particular,\nthe failure index is at most $|\\kappa|+7$. If $\\kappa$ is odd, it is $8$,\nand the denominator is $2$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Ovsienko–Tabachnikov's dual Somos integrality conjectures: a two-weight extension of Hone's divisibility proof",
+      "toolchain": null,
+      "version": 2,
+      "work": "ovsienko-tabachnikov-first-dual-somos-integrality"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s5",
+      "contributor": null,
+      "identity": "collected:ovsienko-tabachnikov-first-dual-somos-integrality:2:s5",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "256870690452e5629b1260ae620f2d647417e857",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/256870690452e5629b1260ae620f2d647417e857/D5/S1/Recurrence/Invariants/SomosFirstDualIntegrality.lean"
+      },
+      "lineage": "collected:ovsienko-tabachnikov-first-dual-somos-integrality:s5",
+      "macros": {
+        "\\QQ": "\\mathbb Q",
+        "\\RR": "\\mathbb R",
+        "\\ZZ": "\\mathbb Z",
+        "\\eps": "\\varepsilon"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "ovsienko-tabachnikov-first-dual-somos-integrality",
+      "scope": "in_scope",
+      "statement": "Homogeneous shadows ($u=v=0$) are integral for all positive $p,q$.\nFor $p=1,q=2$, every integer pair $(u,v)$ is admissible. Otherwise put\n$g=\\gcd(2p-2,|q-2|)>0$. The admissible pairs are exactly\n\\[\n (u,v)=t\\left(\\frac{2p-2}{g},\\frac{q-2}{g}\\right),\\qquad t\\in\\ZZ.\n\\]",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Ovsienko–Tabachnikov's dual Somos integrality conjectures: a two-weight extension of Hone's divisibility proof",
+      "toolchain": null,
+      "version": 2,
+      "work": "ovsienko-tabachnikov-first-dual-somos-integrality"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s6",
+      "contributor": null,
+      "identity": "collected:ovsienko-tabachnikov-first-dual-somos-integrality:2:s6",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "256870690452e5629b1260ae620f2d647417e857",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/256870690452e5629b1260ae620f2d647417e857/D5/S1/Recurrence/Invariants/SomosFirstDualIntegrality.lean"
+      },
+      "lineage": "collected:ovsienko-tabachnikov-first-dual-somos-integrality:s6",
+      "macros": {
+        "\\QQ": "\\mathbb Q",
+        "\\RR": "\\mathbb R",
+        "\\ZZ": "\\mathbb Z",
+        "\\eps": "\\varepsilon"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "ovsienko-tabachnikov-first-dual-somos-integrality",
+      "scope": "in_scope",
+      "statement": "For all positive $p,q$,\n\\[\n b^{u,v,c}_n=u b^{1,0,0}_n+v b^{0,1,0}_n\n              +\\sum_{j=0}^3 c_jh^{(j)}_n.\n\\]\nIn the classical case $p=1,q=2$,\n$\\sum_{j=0}^3 h^{(j)}_n=a_n$ and\n$\\sum_{j=0}^3 jh^{(j)}_n=na_n$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Ovsienko–Tabachnikov's dual Somos integrality conjectures: a two-weight extension of Hone's divisibility proof",
+      "toolchain": null,
+      "version": 2,
+      "work": "ovsienko-tabachnikov-first-dual-somos-integrality"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s7",
+      "contributor": null,
+      "identity": "collected:ovsienko-tabachnikov-first-dual-somos-integrality:2:s7",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "256870690452e5629b1260ae620f2d647417e857",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/256870690452e5629b1260ae620f2d647417e857/D5/S1/Recurrence/Invariants/SomosFirstDualIntegrality.lean"
+      },
+      "lineage": "collected:ovsienko-tabachnikov-first-dual-somos-integrality:s7",
+      "macros": {
+        "\\QQ": "\\mathbb Q",
+        "\\RR": "\\mathbb R",
+        "\\ZZ": "\\mathbb Z",
+        "\\eps": "\\varepsilon"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "ovsienko-tabachnikov-first-dual-somos-integrality",
+      "scope": "in_scope",
+      "statement": "For $u=0,v=1$ and every fixed $c\\in\\ZZ^4$, all shadows are integers\nif and only if $p=1$. If $p\\ge2$, the first noninteger shadow is\n$b_9$, for every positive $q$ and every $c$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Ovsienko–Tabachnikov's dual Somos integrality conjectures: a two-weight extension of Hone's divisibility proof",
+      "toolchain": null,
+      "version": 2,
+      "work": "ovsienko-tabachnikov-first-dual-somos-integrality"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s8",
+      "contributor": null,
+      "identity": "collected:ovsienko-tabachnikov-first-dual-somos-integrality:2:s8",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "256870690452e5629b1260ae620f2d647417e857",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/256870690452e5629b1260ae620f2d647417e857/D5/S1/Recurrence/Invariants/SomosFirstDualIntegrality.lean"
+      },
+      "lineage": "collected:ovsienko-tabachnikov-first-dual-somos-integrality:s8",
+      "macros": {
+        "\\QQ": "\\mathbb Q",
+        "\\RR": "\\mathbb R",
+        "\\ZZ": "\\mathbb Z",
+        "\\eps": "\\varepsilon"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "ovsienko-tabachnikov-first-dual-somos-integrality",
+      "scope": "in_scope",
+      "statement": "For the second deformation\n\\[\n A_{n+4}A_n=(1+\\eps)(A_{n+1}A_{n+3})^p+A_{n+2}^q,\n\\]\nand each fixed $c\\in\\ZZ^4$, all shadows are integers if and only if\n$q=2$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Ovsienko–Tabachnikov's dual Somos integrality conjectures: a two-weight extension of Hone's divisibility proof",
+      "toolchain": null,
+      "version": 2,
+      "work": "ovsienko-tabachnikov-first-dual-somos-integrality"
+    },
+    {
+      "attribution": null,
+      "authors": [
+        {
+          "affiliation": "ChronoAI Pte Ltd, Singapore",
+          "name": "Haobo Ma"
+        },
+        {
+          "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+          "name": "Wenlin Zhang"
+        }
+      ],
+      "claim": "s9",
+      "contributor": null,
+      "identity": "collected:ovsienko-tabachnikov-first-dual-somos-integrality:2:s9",
+      "kind": "paper",
+      "label": "Corollary",
+      "lean_source": {
+        "revision": "256870690452e5629b1260ae620f2d647417e857",
+        "url": "https://github.com/the-omega-institute/trureturing/blob/256870690452e5629b1260ae620f2d647417e857/D5/S1/Recurrence/Invariants/SomosFirstDualIntegrality.lean"
+      },
+      "lineage": "collected:ovsienko-tabachnikov-first-dual-somos-integrality:s9",
+      "macros": {
+        "\\QQ": "\\mathbb Q",
+        "\\RR": "\\mathbb R",
+        "\\ZZ": "\\mathbb Z",
+        "\\eps": "\\varepsilon"
+      },
+      "next_step": "Existing Lean evidence is being checked before new proof work.",
+      "proof_basis": null,
+      "proof_state": "preparing",
+      "receipt": null,
+      "record": "ovsienko-tabachnikov-first-dual-somos-integrality",
+      "scope": "in_scope",
+      "statement": "For $p=1,q=0,u=1,v=0$, the first noninteger shadow is $b_9$ for\nevery $c\\in\\ZZ^4$, and its reduced denominator is $3$.",
+      "status": "preparing",
+      "target_digest": null,
+      "title": "Ovsienko–Tabachnikov's dual Somos integrality conjectures: a two-weight extension of Hone's divisibility proof",
+      "toolchain": null,
+      "version": 2,
+      "work": "ovsienko-tabachnikov-first-dual-somos-integrality"
+    }
+  ]
+}

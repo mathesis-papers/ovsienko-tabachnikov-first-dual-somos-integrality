@@ -1,0 +1,40 @@
+{
+  "generated_paths": [
+    "CHANGELOG.md",
+    "CITATION.cff",
+    "CONTRIBUTING.md",
+    "LICENSES/CC-BY-4.0.txt",
+    "README.md",
+    "formalization/nodes.json",
+    "manuscript/README.md",
+    "manuscript/SHA256SUMS",
+    "manuscript/metadata.json",
+    "manuscript/note.tex",
+    "manuscript/shadow-certificate.csv",
+    "manuscript/verification.json",
+    "manuscript/verify.py",
+    "paper.json",
+    "paper.pdf",
+    "source.archive"
+  ],
+  "generator_version": "0.1.0",
+  "sha256": {
+    "CHANGELOG.md": "c9b536975eaadb89ce23e636f899c36fc648df7b6897c12f13aee5ffa700d098",
+    "CITATION.cff": "445930d0fa26beb85d026568d13b0a0bb5a155f504b7c22ace3fa9a1cc408618",
+    "CONTRIBUTING.md": "fafd66e63160b2a88f433af56d2af2b0f7bf6ed2fd417d46b54446ce07c627ff",
+    "LICENSES/CC-BY-4.0.txt": "58230517b7895aa219ff46a6ed63e67057a1582fb9ea054b16728a8c13525650",
+    "README.md": "676eca9b2103cf5c919fe9730a4be38584efd04a6e7ea3bab0b541f193244c40",
+    "formalization/nodes.json": "c90950bafd7c1f35551d4d2cf393ce15d538487834aeefc8863e01583f00af66",
+    "manuscript/README.md": "fe3743788a8211a6857fa277e141b436c0a02e1b44bfd6d4e6d41970c529843e",
+    "manuscript/SHA256SUMS": "9b3234449cb257ee014aac570689987715a076f38a04816c378c2bd34eed8969",
+    "manuscript/metadata.json": "506c69cc5ef81901ddc24f3548549f7e4ca1474b34778731c3a87321af9546f6",
+    "manuscript/note.tex": "c5f0415eefe3443581d76337e163e17a6fb381f4d35f7c15b62d3cbef639f303",
+    "manuscript/shadow-certificate.csv": "f65267236e89214294aab97dfb06bc1a3e1b2f0e0dc3ab0eede6735148b3fe76",
+    "manuscript/verification.json": "6c5415c180a6e9ee7b347e8fd461b43b48b41ba8d31a4c4ab13679ddb75a69f1",
+    "manuscript/verify.py": "c8bc01a25f809ac7d7ede8a3cd67b81a7e0bce5c3b6b7e391d7ea6c7fdd83c6b",
+    "paper.json": "627e430902eb451378932779934b50f77bc0e6c7dfce7337ace0588c9cf3d595",
+    "paper.pdf": "1f57093f0f55501916e4e4f3f0eeace67d63699eeb9ddbc345402b95541b2eb7",
+    "source.archive": "363837c4c94b1c66fa9d5586a349cf4ac431e41eaa26c3c11eaa867dcee3f66b"
+  },
+  "snapshot_identity": "9cf9d61f872b4a51b72b2ddca7a07763a505d54e9cdb52907fca2f7fbb4f0c3c"
+}

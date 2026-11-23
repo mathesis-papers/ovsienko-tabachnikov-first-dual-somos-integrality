@@ -1,0 +1,84 @@
+{
+  "additional_checks": {
+    "homogeneous_sign_certificate": {
+      "b25": "-545740823162385126878041",
+      "exchange_pairs": 22,
+      "first_negative_index": 25,
+      "hone_index": 24,
+      "indices": [
+        0,
+        25
+      ],
+      "initial": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "p": 1,
+      "q": 2,
+      "rows": 26,
+      "u": 0,
+      "v": 0
+    },
+    "zero_middle_exponent": {
+      "affine_rows_per_tuple": 6,
+      "denominator": 3,
+      "first_failure": 9,
+      "initial_tuples": 83,
+      "p": 1,
+      "q": 0,
+      "u": 1,
+      "v": 0
+    }
+  },
+  "arithmetic": "exact rational arithmetic with Python fractions.Fraction",
+  "counts": {
+    "coefficient_matches": 249000,
+    "coprime_windows": 174300,
+    "denominator_criteria": 44820,
+    "first_failure_criteria": 24900,
+    "local_criteria": 44820,
+    "orbits": 24900,
+    "original_nonintegral_orbits": 664,
+    "zero_obstruction_orbits": 5478
+  },
+  "coverage": "Finite checks of the coefficient recurrence, real-part positivity and integrality, coprime windows, and the local divisibility equivalence. The infinite classification is established by the written proof in note.tex.",
+  "examples": {
+    "first_family_p2_q1_zero_initial_shadows_b9": "212361888977416665298/5",
+    "second_family_p1_q1_zero_initial_shadows_b8": "159/2"
+  },
+  "scope": {
+    "indices": [
+      0,
+      9
+    ],
+    "initial_shadows": "all 81 tuples in {-1,0,1}^4 and (4,-7,11,-13), (-9,0,2,17)",
+    "power_middle": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "power_product": [
+      1,
+      2,
+      3
+    ],
+    "weight_middle": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    "weight_product": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ]
+  },
+  "status": "pass"
+}

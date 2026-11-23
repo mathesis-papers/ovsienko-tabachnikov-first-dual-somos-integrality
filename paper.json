@@ -1,0 +1,66 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 96823,
+      "matches_public": true,
+      "path": "paper.pdf",
+      "public_sha256": "1f57093f0f55501916e4e4f3f0eeace67d63699eeb9ddbc345402b95541b2eb7",
+      "sha256": "1f57093f0f55501916e4e4f3f0eeace67d63699eeb9ddbc345402b95541b2eb7"
+    },
+    "source": {
+      "bytes": 17382,
+      "matches_public": true,
+      "path": "source.archive",
+      "public_sha256": "363837c4c94b1c66fa9d5586a349cf4ac431e41eaa26c3c11eaa867dcee3f66b",
+      "sha256": "363837c4c94b1c66fa9d5586a349cf4ac431e41eaa26c3c11eaa867dcee3f66b"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "Extending Hone's divisibility proof (2007, Proposition 1) and Ovsienko and Tabachnikov's sufficient conditions, we settle the conjecture immediately after Corollary 5.2 in Section 5.4, printed pages 10–11 of arXiv:1705.01623v1 (2017), by classifying integer shadows of both dual Somos deformations. For positive integers p,q, integer weights u,v, and each fixed integer initial shadow tuple, the recurrence A_(n+4) A_n = (1+uε)(A_(n+1) A_(n+3))^p + (1+vε) A_(n+2)^q has integer shadows at every index exactly when (q−2)u = (2p−2)v. In the first conjectured family, u=0,v=1, this is equivalent to p=1; if p≥2, the first noninteger shadow is always at index 9. In the second family, u=1,v=0, the criterion is q=2. More generally, the first failure and its reduced denominator depend only on the real orbit and the integer obstruction, not on the initial shadows. We also give the arbitrary-initial-shadow version of the source's q=0 example and an exact certificate for its reported sign change in the fourth homogeneous shadow.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 2,
+    "doi": null,
+    "lean_source": {
+      "revision": "256870690452e5629b1260ae620f2d647417e857",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/256870690452e5629b1260ae620f2d647417e857/D5/S1/Recurrence/Invariants/SomosFirstDualIntegrality.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "bytes": 96823,
+      "sha256": "1f57093f0f55501916e4e4f3f0eeace67d63699eeb9ddbc345402b95541b2eb7",
+      "url": "/api/v1/collected-papers/ovsienko-tabachnikov-first-dual-somos-integrality/files/pdf?version=2"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-23T15:50:13.640707003Z",
+    "record": "ovsienko-tabachnikov-first-dual-somos-integrality",
+    "repository_name": "ovsienko-tabachnikov-first-dual-somos-integrality",
+    "source": {
+      "bytes": 17382,
+      "sha256": "363837c4c94b1c66fa9d5586a349cf4ac431e41eaa26c3c11eaa867dcee3f66b",
+      "url": "/api/v1/collected-papers/ovsienko-tabachnikov-first-dual-somos-integrality/files/source?version=2"
+    },
+    "title": "Ovsienko–Tabachnikov's dual Somos integrality conjectures: a two-weight extension of Hone's divisibility proof",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-23T15:50:13.640707003Z",
+        "revision": "2",
+        "version": 2
+      }
+    ],
+    "work": "ovsienko-tabachnikov-first-dual-somos-integrality"
+  }
+}

@@ -1,0 +1,519 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,array,booktabs,longtable}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[hidelinks,breaklinks]{hyperref}
+\usepackage{xurl}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newcommand{\ZZ}{\mathbb Z}
+\newcommand{\QQ}{\mathbb Q}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\eps}{\varepsilon}
+\title{Ovsienko--Tabachnikov's dual Somos integrality conjectures:\\
+a two-weight extension of Hone's divisibility proof}
+\author{Haobo Ma\\\small ChronoAI Pte Ltd, Singapore
+\and Wenlin Zhang\\\small National University of Singapore\\\small ChronoAI Pte Ltd, Singapore}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Extending Hone's divisibility proof (2007, Proposition~1)~\cite{Hone07}
+and Ovsienko and Tabachnikov's sufficient conditions, we settle the
+conjecture immediately after Corollary~5.2 in Section~5.4, printed
+pages~10--11 of arXiv:1705.01623v1 (2017)~\cite{OT}, by classifying
+integer shadows of both dual Somos deformations. For positive integers
+$p,q$, integer weights $u,v$, and each fixed integer initial shadow tuple,
+the recurrence
+$A_{n+4}A_n=(1+u\eps)(A_{n+1}A_{n+3})^p+(1+v\eps)A_{n+2}^q$
+has integer shadows at every index exactly when
+$(q-2)u=(2p-2)v$. In the first conjectured family, $u=0,v=1$,
+this is equivalent to $p=1$; if $p\ge2$, the first noninteger shadow
+is always at index $9$. In the second family, $u=1,v=0$, the criterion
+is $q=2$. More generally, the first failure and its reduced denominator
+depend only on the real orbit and the integer obstruction, not on the
+initial shadows. We also give the arbitrary-initial-shadow version of
+the source's $q=0$ example and an exact certificate for its reported
+sign change in the fourth homogeneous shadow.
+\end{abstract}
+
+\section{The recurrence and the result}
+For $K=\ZZ,\QQ$, or $\RR$, put
+$D(K)=K[\eps]/(\eps^2)$. Its elements are uniquely $a+b\eps$,
+with multiplication
+$(a+b\eps)(c+d\eps)=ac+(ad+bc)\eps$.
+We call $a$ the real part and $b$ the shadow. In $D(\QQ)$ and
+$D(\RR)$ an element is invertible exactly when $a\ne0$;
+its inverse is $a^{-1}-ba^{-2}\eps$.
+Fix $p,q\in\ZZ_{>0}$, $u,v\in\ZZ$, and
+$c=(c_0,c_1,c_2,c_3)\in\ZZ^4$. Set $U=1+u\eps$ and $V=1+v\eps$.
+\begin{equation}\label{eq:rec}
+ A_{n+4}A_n=U(A_{n+1}A_{n+3})^p+VA_{n+2}^q,\quad
+ A_j=1+c_j\eps\quad(0\le j\le3).
+\end{equation}
+All indices are nonnegative. Integer shadows mean $b_n\in\ZZ$ when
+$A_n=a_n+b_n\eps$. We use indices $0,\ldots,3$ for the four leading
+slots, as in the beginning of Section~5.4 of~\cite{OT}.
+
+\begin{theorem}\label{thm:main}
+The recurrence~\eqref{eq:rec} has a unique orbit in $D(\QQ)$ and a unique
+orbit in $D(\RR)$; the latter is its coefficientwise image. For every
+choice of the parameters above, all $a_n$ are positive integers and
+each four consecutive $a_n$ are pairwise coprime. For each fixed $c$,
+\begin{equation}\label{eq:iff}
+ \bigl(b_n\in\ZZ\text{ for every }n\ge0\bigr)
+ \quad\Longleftrightarrow\quad
+ (q-2)u=(2p-2)v.
+\end{equation}
+\end{theorem}
+
+Ovsienko and Tabachnikov proved the sufficient directions for the
+two singly weighted families~\cite[Corollary~5.2]{OT}, using weighted
+quivers and a Laurent phenomenon. Their preceding discussion also
+gives integer shadows in the homogeneous case $u=v=0$.
+For the first sufficient family, the earlier coefficient Laurent theorem
+of Hone~\cite[Section~3, Proposition~1]{Hone07} already gives $p=1,u=0$
+with arbitrary $v,c$, by specializing its coefficient $\beta$ to
+$1+v\eps$ and its initial variables to $1+c_j\eps$.
+The Laurent phenomenon~\cite{FZ} and mutation-periodic
+quivers~\cite{FM} provide the broader setting. For the classical
+exponents $p=1,q=2$, arbitrary dual coefficients and their Laurent
+property follow from Fomin--Zelevinsky~\cite[Theorem~1.8]{FZ} by dual
+specialization and occur explicitly in Hone~\cite[Section~1, Lemma~1.1]{Hone}.
+Our proof adapts Hone's earlier coprimality-and-congruence
+argument~\cite{Hone07} to the quotient of the integer dual-number ring.
+Theorem~\ref{thm:main} supplies the necessary and sufficient condition
+for all positive $p,q$, including simultaneous weights.
+The tuple $c$ is fixed separately in each equivalence, not quantified
+inside an all-initial-data integrality predicate.
+The original first-family conjecture says ``is integer if and only if
+$p=1$''~\cite[p.~11]{OT}. The second family is interpreted with the
+exponent $q$ used in the proof and Example~5.3; the literal printed
+formula is distinguished below.
+
+\section{The local obstruction}
+Write
+\begin{equation}\label{eq:kappa}
+ \kappa=(2p-2)v-(q-2)u.
+\end{equation}
+We work in $R=D(\ZZ)$. For any integer $w$ and any integer exponent $m$,
+$(1+w\eps)^m=1+mw\eps$; negative powers use
+$(1+w\eps)^{-1}=1-w\eps$.
+
+\begin{lemma}\label{lem:local}
+Let $A,B,C,D,E,F,G,H\in R$ satisfy
+\begin{align*}
+ EA&=U(BD)^p+VC^q,& FB&=U(CE)^p+VD^q,\\
+ GC&=U(DF)^p+VE^q,& HD&=U(EG)^p+VF^q.
+\end{align*}
+Suppose the real part $e$ of $E$ is nonzero and coprime to the real
+parts of $B,C,D$. Then
+\begin{equation}\label{eq:local}
+ E\mid U(FH)^p+VG^q\quad\Longleftrightarrow\quad e\mid\kappa.
+\end{equation}
+Divisibility on the left is in $R$ and on the right in $\ZZ$.
+\end{lemma}
+\begin{proof}
+Pass to $S=R/(E)$. Coprimality implies that the images of $B,C,D$
+are units. Indeed, if $b$ is the real part of $B$, choose integers
+$r,s$ with $rb+se=1$. Then $rB+sE$ has real part $1$, so is a unit
+in $R$. Its image is $rB$, showing that $B$ is a unit in $S$.
+The same argument applies to $C,D$. The elements $U,V$ are already
+units in $R$.
+
+Omitting bars in $S$, the four equations become
+\begin{equation}\label{eq:quotient}
+ (BD)^p=-VU^{-1}C^q,\qquad
+ F=VB^{-1}D^q,\qquad
+ G=UC^{-1}(DF)^p,\qquad
+ H=VD^{-1}F^q.
+\end{equation}
+Thus $F,G,H$ are also units. Ratios in the next calculation denote
+multiplication by inverses of these units:
+\begin{align*}
+ \frac{VG^q}{U(FH)^p}
+ &=U^{q-1}V^{1-p}C^{-q}D^{pq+p}F^{-p}\\
+ &=U^{q-1}V^{1-2p}C^{-q}(BD)^p\\
+ &=-U^{q-2}V^{2-2p}.
+\end{align*}
+The middle equality uses $BF=VD^q$, and the last uses the first
+equation of~\eqref{eq:quotient}. Consequently,
+\begin{equation}\label{eq:key}
+ U(FH)^p+VG^q
+ =U(FH)^p\bigl(1-U^{q-2}V^{2-2p}\bigr)
+ =U(FH)^p\kappa\eps\quad\text{in }S.
+\end{equation}
+The factor $U(FH)^p$ is a unit, so the left side vanishes in $S$
+exactly when $\kappa\eps$ does. Finally,
+$E\mid\kappa\eps$ in $R$ is equivalent to $e\mid\kappa$ in $\ZZ$:
+in an equality $E(r+s\eps)=\kappa\eps$, the real part gives $er=0$,
+so $r=0$ and $es=\kappa$. Conversely $es=\kappa$ gives
+$E(s\eps)=\kappa\eps$. This proves~\eqref{eq:local} without cancelling
+$\eps$.
+\end{proof}
+
+\section{Integral orbits and the converse}
+\begin{lemma}\label{lem:real}
+The rational real-part recurrence
+\begin{equation}\label{eq:real}
+ a_{n+4}a_n=(a_{n+1}a_{n+3})^p+a_{n+2}^q,\qquad
+ a_0=a_1=a_2=a_3=1
+\end{equation}
+is everywhere positive and satisfies $a_{n+1}>a_n$ for $n\ge3$.
+Whenever a prefix is integral, each four consecutive terms in that
+prefix are pairwise coprime.
+\end{lemma}
+\begin{proof}
+Positive previous values give a positive next value, so division in
+\eqref{eq:real} is always defined. Initially the values are nondecreasing
+and at least $1$. If the values through $a_{n+3}$ have those properties,
+then, since $p\ge1$,
+$(a_{n+1}a_{n+3})^p\ge a_na_{n+3}$, and the remaining term in the
+numerator is positive. Hence $a_{n+4}>a_{n+3}$, proving the claim.
+
+For coprimality, suppose $a,b,c,d$ are four consecutive integral
+terms, pairwise coprime, and the next term $e$ is integral. Then
+$ae=(bd)^p+c^q$. If a prime divides both $e$ and $b$, it divides
+$c^q$, contrary to $\gcd(b,c)=1$. The same argument handles $e,d$.
+If a prime divides $e,c$, it divides $(bd)^p$, contrary to the
+coprimality of $c$ with both $b$ and $d$. Thus $b,c,d,e$ are
+pairwise coprime. The initial window consists of four ones.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+The real parts satisfy~\eqref{eq:real}, independently of $u,v,c$.
+Lemma~\ref{lem:real} makes every preceding dual denominator a unit in
+$D(\QQ)$ and in $D(\RR)$. Forward division therefore gives existence
+and uniqueness in both rings. Induction identifies the real orbit
+with the coefficientwise image of the rational orbit.
+
+First assume $\kappa=0$. The four initial dual values are units of
+$R=D(\ZZ)$, so division by them constructs $A_4,\ldots,A_7$ in $R$.
+Inductively suppose all values through $A_{n+3}$ lie in $R$, where
+$n\ge4$. Lemma~\ref{lem:real} supplies coprimality of all real
+four-term windows in this prefix. Apply Lemma~\ref{lem:local} to
+\[
+ (A,B,C,D,E,F,G,H)
+ =(A_{n-4},A_{n-3},A_{n-2},A_{n-1},A_n,A_{n+1},A_{n+2},A_{n+3}).
+\]
+The four required exchange equations have indices $n-4,\ldots,n-1$.
+Since $a_n\mid0$, the next numerator is divisible by $A_n$ in $R$.
+The quotient equals $A_{n+4}$ by uniqueness of division in $D(\QQ)$.
+This proves integrality of the whole dual orbit for $\kappa=0$.
+In particular, choosing $u=v=0$ and $c=0$ proves that the sequence
+$a_n$ is integral. Since real parts are parameter-independent, it is
+integral for every $u,v,c$; Lemma~\ref{lem:real} now gives all the
+claimed coprimality statements.
+
+Conversely, suppose every $b_n$ is an integer. The already proved
+integrality of the real parts implies $A_n\in R$ for all $n$.
+Applying Lemma~\ref{lem:local} at every $n\ge4$, and using the actual
+next term as the quotient, gives $a_n\mid\kappa$ for every $n\ge4$.
+The positive integers $a_n$ strictly increase from index $3$, so are
+unbounded. They cannot all divide a fixed nonzero integer. Thus
+$\kappa=0$, as required.
+\end{proof}
+
+\begin{corollary}\label{cor:failure}
+Suppose $\kappa\ne0$, and let
+\[
+ m=\min\{n\ge4:a_n\nmid\kappa\}.
+\]
+The first noninteger shadow is $b_{m+4}$. Its denominator in lowest
+terms is
+\[
+ \frac{a_m}{\gcd(a_m,\kappa)}.
+\]
+Both the index and the denominator are independent of $c$. In particular,
+the failure index is at most $|\kappa|+7$. If $\kappa$ is odd, it is $8$,
+and the denominator is $2$.
+\end{corollary}
+\begin{proof}
+The sequence $a_n$ is unbounded, so $m$ exists. Starting with the
+integral prefix through $A_7$, Lemma~\ref{lem:local} gives precisely
+the asserted first failure. To determine its denominator, set
+$E=A_m=e+e'\eps$, and let $X=x+x'\eps$ be its next numerator.
+Its real quotient $t=x/e=a_{m+4}$ is integral. In $S=R/(E)$,
+$X=(x'-te')\eps$, whereas~\eqref{eq:key} writes the same class as a
+unit times $\kappa\eps$. The cyclic additive subgroup generated by
+$\eps$ has order $e$, since $E\mid k\eps$ exactly when $e\mid k$.
+Multiplication by a unit preserves additive order. Thus the order of
+$(x'-te')\eps$ equals $e/\gcd(e,\kappa)$, which is exactly the reduced
+denominator of $b_{m+4}=(x'-te')/e$. Finally $a_n\ge n-2$ for $n\ge4$;
+at $n=|\kappa|+3$ it exceeds $|\kappa|$. The odd case uses $a_4=2$.
+\end{proof}
+
+\begin{corollary}\label{cor:weights}
+Homogeneous shadows ($u=v=0$) are integral for all positive $p,q$.
+For $p=1,q=2$, every integer pair $(u,v)$ is admissible. Otherwise put
+$g=\gcd(2p-2,|q-2|)>0$. The admissible pairs are exactly
+\[
+ (u,v)=t\left(\frac{2p-2}{g},\frac{q-2}{g}\right),\qquad t\in\ZZ.
+\]
+\end{corollary}
+\begin{proof}
+Apply Theorem~\ref{thm:main}. In the last case the two displayed
+coordinates are coprime, so $(q-2)u=(2p-2)v$ gives exactly these
+integer multiples, including when one coordinate is zero.
+\end{proof}
+
+\section{The two conjectured families}
+For fixed $p,q$, write $b^{u,v,c}$ for the shadow sequence and let
+$h^{(j)}=b^{0,0,e_j}$, where $e_j$ is the $j$th standard initial tuple.
+\begin{corollary}\label{cor:affine}
+For all positive $p,q$,
+\[
+ b^{u,v,c}_n=u b^{1,0,0}_n+v b^{0,1,0}_n
+              +\sum_{j=0}^3 c_jh^{(j)}_n.
+\]
+In the classical case $p=1,q=2$,
+$\sum_{j=0}^3 h^{(j)}_n=a_n$ and
+$\sum_{j=0}^3 jh^{(j)}_n=na_n$.
+\end{corollary}
+\begin{proof}
+The $\eps$ coefficient of~\eqref{eq:rec} is a linear recurrence in
+the shadows with forcing linear in $u,v$, and its leading coefficient
+$a_n$ is positive. Superposition and the four initial conditions give
+the first identity. For $p=1,q=2$, both $(a_n)$ and $(na_n)$ solve
+the homogeneous shadow recurrence: the scalar factors in its three
+products are respectively $2$, and $2n+4$. Their initial shadows
+are $(1,1,1,1)$ and $(0,1,2,3)$, giving the remaining identities by
+uniqueness. The first of these is the decomposition in
+\cite[Section~2.1]{OT}; the affine decomposition is described in
+\cite[Section~2.2]{OT}.
+\end{proof}
+
+\begin{corollary}\label{cor:first}
+For $u=0,v=1$ and every fixed $c\in\ZZ^4$, all shadows are integers
+if and only if $p=1$. If $p\ge2$, the first noninteger shadow is
+$b_9$, for every positive $q$ and every $c$.
+\end{corollary}
+\begin{proof}
+The equivalence follows from $\kappa=2p-2$.
+All values through $A_7$ are integral because the first four
+denominators are units of $R$. Since $a_4=2$ divides $2p-2$,
+Lemma~\ref{lem:local} at $n=4$ gives $A_8\in R$.
+But $a_5=2^p+1$, and at $n=5$ the same lemma gives
+$A_9\in R$ exactly when $2^p+1\mid2p-2$. For $p\ge2$,
+\[
+ 0<2p-2<2^p+1.
+\]
+For completeness, $2^p\ge2p$ for $p\ge1$: it holds at $p=1$,
+and doubling $2^p\ge2p$ gives $2^{p+1}\ge4p\ge2(p+1)$.
+Thus the divisibility fails. Since $a_9$ is an integer, its shadow
+$b_9$ is not.
+Its reduced denominator is
+$(2^p+1)/\gcd(2^p+1,2p-2)$ by Corollary~\ref{cor:failure}.
+\end{proof}
+
+\begin{corollary}\label{cor:second}
+For the second deformation
+\[
+ A_{n+4}A_n=(1+\eps)(A_{n+1}A_{n+3})^p+A_{n+2}^q,
+\]
+and each fixed $c\in\ZZ^4$, all shadows are integers if and only if
+$q=2$.
+\end{corollary}
+\begin{proof}
+Set $u=1,v=0$ in Theorem~\ref{thm:main}; then $\kappa=2-q$.
+In particular every odd positive $q$ gives its first noninteger shadow
+at index $8$, with denominator $2$, for every $p,c$.
+\end{proof}
+Here the second deformation is parameterized as in Example~5.3
+of~\cite{OT}. The printed recurrence (18) has exponent $1$ on its
+last factor and says ``is integer'', whereas its proof specifies
+$q=2$. The literal exponent-$1$ assertion fails: $p=1,c=0$ gives
+$b_8=159/2$, already recorded in Example~5.3(b). Replacing the last
+factor by $A_{n+2}^2$ gives the sufficient condition proved there.
+This is a correction of the displayed formula, not a counterexample
+to the stated conjecture with its intended parameter $q$.
+
+\begin{corollary}\label{cor:zero}
+For $p=1,q=0,u=1,v=0$, the first noninteger shadow is $b_9$ for
+every $c\in\ZZ^4$, and its reduced denominator is $3$.
+\end{corollary}
+\begin{proof}
+Here the real prefix is $(1,1,1,1,2,3,4,9,14,19)$.
+Substitution into the shadow recurrence gives the following exact
+affine expressions $b_n=d_n+L_nc$, where $L_nc$ is the dot product.
+\begin{center}\small
+\begin{tabular}{@{}crrrrr@{}}
+\toprule
+$n$ & $d_n$ & \multicolumn{4}{c}{$L_n$}\\
+\midrule
+4 & 1 & $-2$ & 1 & 0 & 1\\
+5 & 3 & $-2$ & $-2$ & 2 & 1\\
+6 & 6 & $-2$ & $-2$ & $-2$ & 4\\
+7 & 24 & $-12$ & 0 & $-4$ & 3\\
+8 & 56 & $-13$ & $-16$ & 3 & 2\\
+9 & $307/3$ & $-14$ & $-18$ & $-18$ & 15\\
+\bottomrule
+\end{tabular}
+\end{center}
+These rows follow successively from
+$a_nb_{n+4}=a_{n+1}b_{n+3}+a_{n+3}b_{n+1}
++a_{n+1}a_{n+3}-a_{n+4}b_n$, so each equality can be checked
+without the positive-$q$ theorem. The first five rows are integral
+and the final row has fractional part $1/3$ for every integer $c$.
+The specialization $c=0$ is Example~5.3(a) of~\cite{OT}.
+\end{proof}
+
+\section{A finite sign obstruction}
+The homogeneous classical shadow with initial tuple $(0,0,0,1)$
+has
+\[
+ b_{25}=-545740823162385126878041<0,
+\]
+where indices start at zero. This confirms the earlier negative-sign
+observation in~\cite[Section~2.1, p.~3]{OT}, whose indices start at one.
+It also gives an explicit counterexample to the later conjecture
+in~\cite[Example~3.8]{Hone} that the fourth homogeneous shadow is
+``positive for all $n\ge2$'': Hone's $y^{(\mathrm{iv})}_{24}=b_{25}$.
+Indeed his initial indices $-1,0,1,2$ correspond to our $0,1,2,3$,
+with the same four initial shadows and homogeneous recurrence.
+
+The file \texttt{shadow-certificate.csv} supplies the exact integer
+pairs $(a_n,b_n)$ for $0\le n\le25$. Each successive row satisfies
+\[
+ a_na_{n+4}=a_{n+1}a_{n+3}+a_{n+2}^2,\qquad
+ a_nb_{n+4}=a_{n+1}b_{n+3}+2a_{n+2}b_{n+2}
+ +a_{n+3}b_{n+1}-a_{n+4}b_n.
+\]
+Together with the initial data, these identities certify the displayed
+negative term. In this prefix, $b_n>0$ for $3\le n\le24$.
+This finite sign obstruction does not assert the eventual sign of any
+homogeneous shadow or settle the two forced-shadow positivity and
+growth conjectures in~\cite[Section~2.2]{OT}.
+
+\clearpage
+\section{Coverage and supporting calculations}
+\small
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.42\textwidth}>{\raggedright\arraybackslash}p{0.53\textwidth}@{}}
+\toprule
+Source statement & Mathematical coverage\\
+\midrule
+\endfirsthead
+\toprule
+Source statement & Mathematical coverage (continued)\\
+\midrule
+\endhead
+\cite{OT}, Section 5.4, p.~10, Corollary 5.2(i), $p=1$
+ & Reproved; follows by dual substitution from Hone (2007,
+ Proposition~1); explicit dual proof Ovsienko--Tabachnikov (2017).\\[3pt]
+\cite{OT}, Section 5.4, p.~11, conjecture after the proof, first deformation
+ & Proved for every initial tuple; Corollary~\ref{cor:first} also locates the first failure.\\[3pt]
+Same conjecture, second deformation, and Example 5.3(b,c), $q=1,3$
+ & Proved for $q>0$ in Corollary~\ref{cor:second}; odd $q$ fails first at $8$.
+ The $q=2$ sufficient direction is reproved; prior proof
+ Ovsienko--Tabachnikov (2017).\\[3pt]
+\cite{OT}, p.~10, literal displayed (18), last exponent $1$
+ & Refuted-and-corrected: $p=1,c=0,b_8=159/2$;
+ corrected last exponent $2$, as in its proof.\\[3pt]
+\cite{OT}, Section 1.2 (order four), Section 2.1 integrality and basis sum,
+and Section 2.2 affine decomposition
+ & Reproved; homogeneous integrality follows from Fomin--Zelevinsky
+ (2001 preprint, Example~3.3); the decompositions are in
+ Ovsienko--Tabachnikov (2017). Corollaries~\ref{cor:weights} and~\ref{cor:affine}.\\[3pt]
+\cite{OT}, p.~11, Example 5.3(a), $p=1,q=0$
+ & Prior example Ovsienko--Tabachnikov (2017); extended to every
+ initial tuple in Corollary~\ref{cor:zero}.\\[3pt]
+\cite{OT}, Section 2.1, fourth homogeneous shadow's reported negative terms
+ & Prior sign observation Ovsienko--Tabachnikov (2017);
+ exact finite certificate through zero-based index $25$.\\[3pt]
+\cite{Hone}, Lemma 1.1, arbitrary classical dual coefficients
+ & Reproved at real coefficients $1,1$; dual specialization of
+ Fomin--Zelevinsky (2001, Theorem~1.8), explicit dual treatment by
+ Hone (2021 preprint; 2023 journal). Earlier singly weighted examples:
+ Ovsienko~\cite{Ovs}.\\[3pt]
+\cite{Hone}, Example 3.8, fourth homogeneous shadow positivity conjecture
+ & Refuted (explicit counterexample): $y^{(\mathrm{iv})}_{24}<0$.
+ Negative-sign observation already in Ovsienko--Tabachnikov (2017).\\[3pt]
+Simultaneous-weight lattice; exact first-failure index and denominator
+ & Not posed in~\cite{OT}; proved in
+ Corollaries~\ref{cor:weights} and~\ref{cor:failure}.\\[3pt]
+\cite{OT}, Section 2.1, other homogeneous-shadow signs;
+ Section 2.2, forced-shadow positivity and faster growth
+ & Not covered. Hone~\cite[Example~3.8]{Hone} proves positivity for a
+ different homogeneous basis, not these two forced shadows.\\[3pt]
+\cite{OT}, Sections 1.1--1.2, other orders; Sections 5.2--5.3,
+ Lucas and order-three examples (OEIS A001871, A005246)
+ & Not covered; the proof uses four-term windows. For dual Somos-5,
+ see Harrow--Hone~\cite{HH}.\\[3pt]
+\cite{OT}, Section 5.5, asymptotics and complete integrability question
+ & Not covered by the divisibility proof. Classical analytic solutions
+ are given in Hone~\cite{Hone}; no general-exponent conclusion is inferred.\\
+\bottomrule
+\end{longtable}
+\normalsize
+
+The accompanying \texttt{verify.py} uses exact rational arithmetic and
+two implementations of the dual recurrence. Its finite coverage is
+$1\le p\le3$, $1\le q\le4$, $-2\le u,v\le2$, indices $0\le n\le9$,
+and $83$ initial tuples: all of $\{-1,0,1\}^4$, together with
+$(4,-7,11,-13)$ and $(-9,0,2,17)$. It checks coefficient agreement,
+positive integral real parts, coprime windows, the local criterion
+whenever its preceding eight terms are integral, the reduced-denominator
+formula, and the first failure in Corollary~\ref{cor:first}.
+It also checks the affine $q=0$ table on these initial tuples and all
+rows of the homogeneous-shadow certificate using both implementations.
+These finite calculations supplement the
+infinite written proof; their exact counts are in \texttt{verification.json}.
+For example, $p=q=1,u=1,v=0,c=0$ gives $b_8=159/2$, agreeing with
+Example~5.3(b) of~\cite{OT} after indexing its leading slots from zero.
+
+The pinned Lean coverage is the first-family statement
+$u=0,v=1$ for every positive $p,q$ and every integer initial tuple,
+including existence, uniqueness, positivity, and the rational-to-real
+dual-number correspondence. Its declaration in the following fixed source is
+\begin{center}\small
+\path{D5.S1.Recurrence.Invariants.SomosFirstDualIntegrality.result}
+\end{center}
+\begin{center}\footnotesize
+\url{https://github.com/the-omega-institute/trureturing/blob/256870690452e5629b1260ae620f2d647417e857/D5/S1/Recurrence/Invariants/SomosFirstDualIntegrality.lean}
+\end{center}
+Here positivity means the real part $a_n>0$, not positivity of a
+shadow. The definitions \texttt{IsOrbit} and \texttt{IsRealOrbit} use
+the four slots $0,1,2,3$, real initial values $1$, arbitrary integer
+shadows, and the first deformation $u=0,v=1$.
+The two-weight classification, second-family converse, exact
+first-failure denominator, and $q=0$ assertion have the written proofs
+above. The sign counterexample has the finite certificate just stated.
+These scopes are distinct from that declaration's coverage.
+
+\small
+\begin{thebibliography}{9}
+\bibitem{OT} V.~Ovsienko and S.~Tabachnikov,
+\emph{Dual numbers, weighted quivers, and extended Somos and Gale--Robinson sequences},
+Algebr. Represent. Theory \textbf{21} (2018), 1119--1132.
+\href{https://doi.org/10.1007/s10468-018-9779-3}{doi:10.1007/s10468-018-9779-3}.
+Posing version: \href{https://arxiv.org/abs/1705.01623v1}{arXiv:1705.01623v1} (2017).
+\bibitem{FZ} S.~Fomin and A.~Zelevinsky,
+\emph{The Laurent phenomenon}, Adv. Appl. Math. \textbf{28} (2002), 119--144.
+\href{https://doi.org/10.1006/aama.2001.0770}{doi:10.1006/aama.2001.0770}.
+\bibitem{FM} A.~P.~Fordy and R.~J.~Marsh,
+\emph{Cluster mutation-periodic quivers and associated Laurent sequences},
+J. Algebraic Combin. \textbf{34} (2011), 19--66.
+\href{https://doi.org/10.1007/s10801-010-0262-4}{doi:10.1007/s10801-010-0262-4}.
+\bibitem{Hone} A.~N.~W.~Hone,
+\emph{Casting light on shadow Somos sequences},
+Glasg. Math. J. \textbf{65} (2023), suppl.~S1, S87--S101.
+\href{https://doi.org/10.1017/S0017089522000167}{doi:10.1017/S0017089522000167}.
+First preprint: \href{https://arxiv.org/abs/2111.10905v1}{arXiv:2111.10905v1} (2021).
+\bibitem{Hone07} A.~N.~W.~Hone,
+\emph{Laurent polynomials and superintegrable maps},
+SIGMA \textbf{3} (2007), 022, 18~pp.
+\href{https://doi.org/10.3842/SIGMA.2007.022}{doi:10.3842/SIGMA.2007.022}.
+\bibitem{Ovs} V.~Ovsienko,
+\emph{A step towards cluster superalgebras},
+\href{https://arxiv.org/abs/1503.01894v7}{arXiv:1503.01894v7} (2016),
+Section~7, Corollary~7.1 and the following second extension.
+\bibitem{HH} J.~W.~E.~Harrow and A.~N.~W.~Hone,
+\emph{Casting more light in the shadows: dual Somos-5 sequences},
+\href{https://arxiv.org/abs/2409.00406}{arXiv:2409.00406} (2024).
+\end{thebibliography}
+\medskip\noindent\small
+\textcopyright\ 2026 Haobo Ma and Wenlin Zhang.
+Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
+\end{document}

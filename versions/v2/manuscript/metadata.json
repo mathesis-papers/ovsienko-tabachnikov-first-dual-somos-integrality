@@ -1,0 +1,15 @@
+{
+  "id": "ovsienko-tabachnikov-first-dual-somos-integrality",
+  "revision": 2,
+  "problem_ids": ["ovsienko-tabachnikov-first-dual-somos-integrality"],
+  "topic": "Integer shadows of the two dual Somos deformations posed by Ovsienko and Tabachnikov, and their simultaneous-weight extension",
+  "title": "Ovsienko–Tabachnikov's dual Somos integrality conjectures: a two-weight extension of Hone's divisibility proof",
+  "creators": [
+    {"name": "Haobo Ma", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+    {"name": "Wenlin Zhang", "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"}
+  ],
+  "abstract": "Extending Hone's divisibility proof (2007, Proposition 1) and Ovsienko and Tabachnikov's sufficient conditions, we settle the conjecture immediately after Corollary 5.2 in Section 5.4, printed pages 10–11 of arXiv:1705.01623v1 (2017), by classifying integer shadows of both dual Somos deformations. For positive integers p,q, integer weights u,v, and each fixed integer initial shadow tuple, the recurrence A_(n+4) A_n = (1+uε)(A_(n+1) A_(n+3))^p + (1+vε) A_(n+2)^q has integer shadows at every index exactly when (q−2)u = (2p−2)v. In the first conjectured family, u=0,v=1, this is equivalent to p=1; if p≥2, the first noninteger shadow is always at index 9. In the second family, u=1,v=0, the criterion is q=2. More generally, the first failure and its reduced denominator depend only on the real orbit and the integer obstruction, not on the initial shadows. We also give the arbitrary-initial-shadow version of the source's q=0 example and an exact certificate for its reported sign change in the fourth homogeneous shadow.",
+  "summary": "A quotient-ring divisibility argument extends Hone's method to classify simultaneous integer dual weights. With κ=(2p−2)v−(q−2)u, all shadows are integers exactly when κ=0. For κ≠0, if m is the first index n≥4 with a_n not dividing κ, the first noninteger shadow is b_(m+4), with reduced denominator a_m/gcd(a_m,κ), independently of the integer initial shadows. The pinned Lean declaration covers the original first family; the simultaneous-weight theorem, other corollaries and the q=0 boundary result have written proofs, and the homogeneous sign obstruction has an exact finite certificate.",
+  "license": "cc-by-4.0",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/256870690452e5629b1260ae620f2d647417e857/D5/S1/Recurrence/Invariants/SomosFirstDualIntegrality.lean"
+}
