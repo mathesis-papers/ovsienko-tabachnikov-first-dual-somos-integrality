@@ -28,9 +28,9 @@
         "name": "Wenlin Zhang"
       }
     ],
-    "concept_doi": null,
+    "concept_doi": "10.5281/zenodo.24412947",
     "current_version": 2,
-    "doi": null,
+    "doi": "10.5281/zenodo.24412948",
     "lean_source": {
       "revision": "256870690452e5629b1260ae620f2d647417e857",
       "url": "https://github.com/the-omega-institute/trureturing/blob/256870690452e5629b1260ae620f2d647417e857/D5/S1/Recurrence/Invariants/SomosFirstDualIntegrality.lean"
