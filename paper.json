@@ -31,6 +31,7 @@
     "concept_doi": "10.5281/zenodo.24412947",
     "current_version": 2,
     "doi": "10.5281/zenodo.24412948",
+    "kind": "note",
     "lean_source": {
       "revision": "256870690452e5629b1260ae620f2d647417e857",
       "url": "https://github.com/the-omega-institute/trureturing/blob/256870690452e5629b1260ae620f2d647417e857/D5/S1/Recurrence/Invariants/SomosFirstDualIntegrality.lean"
@@ -55,10 +56,12 @@
     "title": "Ovsienko–Tabachnikov's dual Somos integrality conjectures: a two-weight extension of Hone's divisibility proof",
     "versions": [
       {
+        "changelog": null,
         "previous_version": null,
         "published_on": "2026-11-23T15:50:13.640707003Z",
         "revision": "2",
-        "version": 2
+        "version": 2,
+        "version_label": null
       }
     ],
     "work": "ovsienko-tabachnikov-first-dual-somos-integrality"
